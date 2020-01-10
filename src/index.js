@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App.js";
-
-import "./components/sass/main.scss";
+import App from "./App.js";
 
 const Application = () => {
   return (

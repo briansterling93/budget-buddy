@@ -1,0 +1,54 @@
+#main-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#results-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+#results-box2 {
+  height: 14rem;
+  width: 90rem;
+  background-color: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+#income-output {
+  height: 3.5rem;
+  width: 20rem;
+  background-color: green;
+  opacity: 0.3;
+  border-radius: 1.3rem;
+}
+
+#expenses-output {
+  height: 3.5rem;
+  width: 20rem;
+  background-color: red;
+  opacity: 0.3;
+  border-radius: 1.3rem;
+}
+
+#balance-output {
+  height: 3.5rem;
+  width: 20rem;
+  background-color: black;
+  opacity: 0.3;
+  border-radius: 1.3rem;
+}
+
+.result-output {
+  padding: 6rem;
+
+  h3 {
+    text-align: center;
+  }
+}
