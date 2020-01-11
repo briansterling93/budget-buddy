@@ -3,7 +3,6 @@ import React from "react";
 const ResultsSection = () => {
   return (
     <div id="results-section">
-      <h1 id="main-title">Budget Buddy</h1>
       <div id="results-box">
         <div id="results-box2">
           <div className="result-output">

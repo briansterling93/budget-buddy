@@ -1,3 +1,6 @@
+//Colors
+$off-white: #ececec;
+
 * {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -5,18 +8,18 @@
   box-sizing: border-box;
 }
 
-body {
-  padding: 1rem;
-}
+// body {
+//   padding: 0.2rem;
+// }
 
-#main-app {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(15, 0, 114, 0.8),
-      rgba(68, 60, 124, 0.8)
-    ),
-    url("https://www.gstatic.com/bfe/apps/website/img/h/102479967-calculator-paper-1440.jpg");
-  background-size: cover;
-  height: 100vh;
-  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-}
+// #main-app {
+//   background-image: linear-gradient(
+//       to right bottom,
+//       rgba(15, 0, 114, 0.8),
+//       rgba(68, 60, 124, 0.8)
+//     ),
+//     url("https://www.gstatic.com/bfe/apps/website/img/h/102479967-calculator-paper-1440.jpg");
+//   background-size: cover;
+//   height: 100vh;
+//   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+// }
