@@ -17,11 +17,15 @@
 
   input {
     border: none;
-    border-bottom: 0.1px solid black;
+    outline: none;
+    // background-color: $off-white;
+    border-bottom: 0.1px solid #c6c6c6;
+    text-align: center;
   }
 
   p {
     font-weight: 100;
+    padding-bottom: 0.4rem;
   }
 }
 
@@ -35,11 +39,31 @@
   height: 19rem;
   width: 18rem;
   background-color: transparent;
-  border-left: 1px solid black;
 }
 
 #expenses-input {
   height: 19rem;
   width: 18rem;
   background-color: transparent;
+}
+
+.ui-input {
+  text-align: center;
+  padding: 0.3rem;
+}
+
+#income-title {
+  color: #119535;
+}
+
+#expenses-title {
+  color: #f20131;
+}
+
+// #reset-button {
+//   padding-bottom: 1rem;
+// }
+
+#reset-button2 {
+  padding: 0.3rem;
 }

@@ -6,16 +6,19 @@ const ResultsSection = () => {
       <div id="results-box">
         <div id="results-box2">
           <div className="result-output">
-            <h3>Income</h3>
-            <div id="income-output"></div>
+            <div id="income-output">
+              <h3>Income</h3>
+            </div>
           </div>
           <div className="result-output">
-            <h3>Expenses</h3>
-            <div id="expenses-output"></div>
+            <div id="expenses-output">
+              <h3>Expenses</h3>
+            </div>
           </div>
           <div className="result-output">
-            <h3>Available Balance</h3>
-            <div id="balance-output"></div>
+            <div id="balance-output">
+              <h3>Remaining Funds</h3>
+            </div>
           </div>
         </div>
       </div>

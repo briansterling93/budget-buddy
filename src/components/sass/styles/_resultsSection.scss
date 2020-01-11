@@ -18,8 +18,8 @@
   align-items: center;
   background-image: linear-gradient(
       to right bottom,
-      rgba(48, 48, 48, 0.8),
-      rgba(77, 77, 77, 0.8)
+      rgba(48, 48, 48, 0.5),
+      rgba(77, 77, 77, 0.5)
     ),
     url("http://www.kabu-load.net/data/out/1/IMG_475.jpg");
   background-size: cover;
@@ -30,31 +30,29 @@
     font-weight: 500;
     letter-spacing: 0.1rem;
     padding-bottom: 0.2rem;
+    font-size: 1rem;
   }
 }
 
 #income-output {
-  height: 3.5rem;
+  height: 2.5rem;
   width: 13rem;
-  background-color: green;
+  background-color: #119535;
   opacity: 0.8;
-  border-radius: 5rem;
 }
 
 #expenses-output {
-  height: 3.5rem;
+  height: 2.5rem;
   width: 13rem;
-  background-color: red;
+  background-color: #f20131;
   opacity: 0.8;
-  border-radius: 5rem;
 }
 
 #balance-output {
-  height: 3.5rem;
+  height: 2.5rem;
   width: 13rem;
   background-color: black;
   opacity: 0.8;
-  border-radius: 5rem;
 }
 
 .result-output {
