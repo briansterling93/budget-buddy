@@ -1,20 +1,42 @@
 import React, { useState } from "react";
 
 const IncomeSection = () => {
-  const [mortgageNum, setNum1] = useState("0.00");
-  const [utilitiesNum, setNum2] = useState("0.00");
-  const [vehicleNum, setNum3] = useState("0.00");
-  const [groceryNum, setNum4] = useState("0.00");
-  const [loanNum, setNum5] = useState("0.00");
-  const [entertainmentNum, setNum6] = useState("0.00");
-  const [miscNum, setNum7] = useState("0.00");
-  const [netIncomeNum, setNum8] = useState("0.00");
-  const [otherIncomeNum, setNum9] = useState("0.00");
-  const [bonusesNum, setNum10] = useState("0.00");
+  const [mortgageNum, setNum1] = useState("");
+  const [utilitiesNum, setNum2] = useState("");
+  const [vehicleNum, setNum3] = useState("");
+  const [groceryNum, setNum4] = useState("");
+  const [loanNum, setNum5] = useState("");
+  const [entertainmentNum, setNum6] = useState("");
+  const [miscNum, setNum7] = useState("");
+  const [netIncomeNum, setNum8] = useState("");
+  const [otherIncomeNum, setNum9] = useState("");
+  const [bonusesNum, setNum10] = useState("");
 
-  const changeNum = () => {
-    alert("changed");
-  };
+  // const handleChange = e => {
+  //   setNum1(e.target.value);
+
+  //   console.log(mortgageNum);
+  // };
+
+  // const handleChange2 = e => {
+  //   setNum2(e.target.value);
+
+  //   console.log(utilitiesNum);
+  // };
+
+  // const handleAdd = () => {
+  //   const formatter = new Intl.NumberFormat("en-US", {
+  //     style: "currency",
+  //     currency: "USD",
+  //     minimumFractionDigits: 2
+  //   });
+
+  //   const y = formatter.format(mortgageNum);
+  //   const yy = formatter.format(utilitiesNum);
+
+  //   console.log(y + yy); //numbers adding as strings instead of integers.. figure out way to add them as #'s
+  // };
+
   return (
     <div id="income-section">
       <div id="income-section2">
@@ -23,11 +45,22 @@ const IncomeSection = () => {
           <div id="expenses-input">
             <div className="ui-input">
               <p>Mortgage / Rent</p>
-              <input value={mortgageNum} name="mortgage" type="number" />
+              <input
+                // onChange={handleChange}
+                value={mortgageNum}
+                name="mortgage"
+                type="number"
+              />
             </div>
             <div className="ui-input">
               <p>Utilities</p>
-              <input value={utilitiesNum} name="utilities" type="number" />
+              <input
+                // onChange={handleChange2}
+                value={utilitiesNum}
+                name="utilities"
+                type="number"
+              />
+              {/* <button onClick={handleAdd}>Test</button> */}
             </div>
             <div className="ui-input">
               <p>Vehicle Payment</p>
