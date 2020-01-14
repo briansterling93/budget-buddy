@@ -16,9 +16,7 @@ const ResultsSection = () => {
             </div>
           </div>
           <div className="result-output">
-            <div id="balance-output">
-              <h3>Remaining Funds</h3>
-            </div>
+            <div id="balance-output"></div>
           </div>
         </div>
       </div>
