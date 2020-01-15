@@ -12,17 +12,65 @@ const IncomeSection = () => {
   const [otherIncomeNum, setNum9] = useState("");
   const [bonusesNum, setNum10] = useState("");
 
-  // const handleChange = e => {
-  //   setNum1(e.target.value);
+  const handleChange = e => {
+    setNum1(e.target.value);
 
-  //   console.log(mortgageNum);
-  // };
+    console.log(mortgageNum);
+  };
 
-  // const handleChange2 = e => {
-  //   setNum2(e.target.value);
+  const handleChange2 = e => {
+    setNum2(e.target.value);
 
-  //   console.log(utilitiesNum);
-  // };
+    console.log(utilitiesNum);
+  };
+
+  const handleChange3 = e => {
+    setNum3(e.target.value);
+
+    console.log(utilitiesNum);
+  };
+
+  const handleChange4 = e => {
+    setNum4(e.target.value);
+
+    console.log(utilitiesNum);
+  };
+
+  const handleChange5 = e => {
+    setNum5(e.target.value);
+
+    console.log(utilitiesNum);
+  };
+
+  const handleChange6 = e => {
+    setNum6(e.target.value);
+
+    console.log(utilitiesNum);
+  };
+
+  const handleChange7 = e => {
+    setNum7(e.target.value);
+
+    console.log(utilitiesNum);
+  };
+
+  const handleChange8 = e => {
+    setNum8(e.target.value);
+
+    console.log(utilitiesNum);
+  };
+
+  const handleChange9 = e => {
+    setNum9(e.target.value);
+
+    console.log(utilitiesNum);
+  };
+
+  const handleChange10 = e => {
+    setNum10(e.target.value);
+
+    console.log(utilitiesNum);
+  };
 
   // const handleAdd = () => {
   //   const formatter = new Intl.NumberFormat("en-US", {
@@ -31,10 +79,12 @@ const IncomeSection = () => {
   //     minimumFractionDigits: 2
   //   });
 
-  //   const y = formatter.format(mortgageNum);
-  //   const yy = formatter.format(utilitiesNum);
+  //   const y = mortgageNum;
+  //   const yy = utilitiesNum;
 
-  //   console.log(y + yy); //numbers adding as strings instead of integers.. figure out way to add them as #'s
+  //   const g = +y + +yy;
+
+  //   console.log(formatter.format(g));
   // };
 
   return (
@@ -46,7 +96,7 @@ const IncomeSection = () => {
             <div className="ui-input">
               <p>Mortgage / Rent</p>
               <input
-                // onChange={handleChange}
+                onChange={handleChange}
                 value={mortgageNum}
                 name="mortgage"
                 type="number"
@@ -55,28 +105,43 @@ const IncomeSection = () => {
             <div className="ui-input">
               <p>Utilities</p>
               <input
-                // onChange={handleChange2}
+                onChange={handleChange2}
                 value={utilitiesNum}
                 name="utilities"
                 type="number"
               />
-              {/* <button onClick={handleAdd}>Test</button> */}
             </div>
             <div className="ui-input">
               <p>Vehicle Payment</p>
-              <input value={vehicleNum} name="vehicle-payment" type="number" />
+              <input
+                onChange={handleChange3}
+                value={vehicleNum}
+                name="vehicle-payment"
+                type="number"
+              />
             </div>
             <div className="ui-input">
               <p>Grocery / Food</p>
-              <input value={groceryNum} name="grocery" type="number" />
+              <input
+                onChange={handleChange4}
+                value={groceryNum}
+                name="grocery"
+                type="number"
+              />
             </div>
             <div className="ui-input">
               <p>Credit Card(s) / Loan(s)</p>
-              <input value={loanNum} name="loan" type="number" />
+              <input
+                onChange={handleChange5}
+                value={loanNum}
+                name="loan"
+                type="number"
+              />
             </div>
             <div className="ui-input">
               <p>Entertainment</p>
               <input
+                onChange={handleChange6}
                 value={entertainmentNum}
                 name="entertainment"
                 type="number"
@@ -84,7 +149,12 @@ const IncomeSection = () => {
             </div>
             <div className="ui-input">
               <p>Miscellaneous</p>
-              <input value={miscNum} name="miscellaneous" type="number" />
+              <input
+                onChange={handleChange7}
+                value={miscNum}
+                name="miscellaneous"
+                type="number"
+              />
             </div>
             <div id="reset-button">
               <br />
@@ -97,15 +167,34 @@ const IncomeSection = () => {
           <div id="income-input">
             <div className="ui-input">
               <p>Net Monthly Income</p>
-              <input value={netIncomeNum} name="net-income" type="number" />
+              <input
+                onChange={handleChange8}
+                value={netIncomeNum}
+                name="net-income"
+                type="number"
+              />
             </div>
             <div className="ui-input">
               <p>Other Monthly Income</p>
-              <input value={otherIncomeNum} name="other-income" type="number" />
+              <input
+                onChange={handleChange9}
+                value={otherIncomeNum}
+                name="other-income"
+                type="number"
+              />
             </div>
             <div className="ui-input">
               <p>Monthly Bonuses</p>
-              <input value={bonusesNum} name="bonuses-income" type="number" />
+              <input
+                onChange={handleChange10}
+                value={bonusesNum}
+                name="bonuses-income"
+                type="number"
+              />
+            </div>
+            <div className="ui-input">
+              <button>Calculate</button>
+              <button>Reset</button>
             </div>
           </div>
         </div>
