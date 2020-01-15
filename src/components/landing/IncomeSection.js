@@ -1,91 +1,92 @@
 import React, { useState } from "react";
 
 const IncomeSection = () => {
-  const [mortgageNum, setNum1] = useState("");
-  const [utilitiesNum, setNum2] = useState("");
-  const [vehicleNum, setNum3] = useState("");
-  const [groceryNum, setNum4] = useState("");
-  const [loanNum, setNum5] = useState("");
-  const [entertainmentNum, setNum6] = useState("");
-  const [miscNum, setNum7] = useState("");
-  const [netIncomeNum, setNum8] = useState("");
-  const [otherIncomeNum, setNum9] = useState("");
-  const [bonusesNum, setNum10] = useState("");
+  const [mortgageNum, setNum1] = useState("0.00");
+  const [utilitiesNum, setNum2] = useState("0.00");
+  const [vehicleNum, setNum3] = useState("0.00");
+  const [groceryNum, setNum4] = useState("0.00");
+  const [loanNum, setNum5] = useState("0.00");
+  const [entertainmentNum, setNum6] = useState("0.00");
+  const [miscNum, setNum7] = useState("0.00");
+  const [netIncomeNum, setNum8] = useState("0.00");
+  const [otherIncomeNum, setNum9] = useState("0.00");
+  const [bonusesNum, setNum10] = useState("0.00");
 
   const handleChange = e => {
     setNum1(e.target.value);
-
-    console.log(mortgageNum);
   };
 
   const handleChange2 = e => {
     setNum2(e.target.value);
-
-    console.log(utilitiesNum);
   };
 
   const handleChange3 = e => {
     setNum3(e.target.value);
-
-    console.log(utilitiesNum);
   };
 
   const handleChange4 = e => {
     setNum4(e.target.value);
-
-    console.log(utilitiesNum);
   };
 
   const handleChange5 = e => {
     setNum5(e.target.value);
-
-    console.log(utilitiesNum);
   };
 
   const handleChange6 = e => {
     setNum6(e.target.value);
-
-    console.log(utilitiesNum);
   };
 
   const handleChange7 = e => {
     setNum7(e.target.value);
-
-    console.log(utilitiesNum);
   };
 
   const handleChange8 = e => {
     setNum8(e.target.value);
-
-    console.log(utilitiesNum);
   };
 
   const handleChange9 = e => {
     setNum9(e.target.value);
-
-    console.log(utilitiesNum);
   };
 
   const handleChange10 = e => {
     setNum10(e.target.value);
-
-    console.log(utilitiesNum);
   };
 
-  // const handleAdd = () => {
-  //   const formatter = new Intl.NumberFormat("en-US", {
-  //     style: "currency",
-  //     currency: "USD",
-  //     minimumFractionDigits: 2
-  //   });
+  const handleReset = () => {
+    setNum1("0.00");
+    setNum2("0.00");
+    setNum3("0.00");
+    setNum4("0.00");
+    setNum5("0.00");
+    setNum6("0.00");
+    setNum7("0.00");
+    setNum8("0.00");
+    setNum9("0.00");
+    setNum10("0.00");
+  };
 
-  //   const y = mortgageNum;
-  //   const yy = utilitiesNum;
+  const handleMath = () => {
+    const formatter = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      minimumFractionDigits: 2
+    });
 
-  //   const g = +y + +yy;
+    const income = +netIncomeNum + +otherIncomeNum + +bonusesNum;
 
-  //   console.log(formatter.format(g));
-  // };
+    const expenses =
+      +mortgageNum +
+      +utilitiesNum +
+      +vehicleNum +
+      +groceryNum +
+      +loanNum +
+      +entertainmentNum +
+      +miscNum;
+
+    const sum = formatter.format(+income - +expenses);
+
+    console.log(sum);
+  };
 
   return (
     <div id="income-section">
@@ -193,8 +194,8 @@ const IncomeSection = () => {
               />
             </div>
             <div className="ui-input">
-              <button>Calculate</button>
-              <button>Reset</button>
+              <button onClick={handleMath}>Calculate</button>
+              <button onClick={handleReset}>Reset</button>
             </div>
           </div>
         </div>
