@@ -18,7 +18,7 @@
   input {
     border: none;
     outline: none;
-    // background-color: $off-white;
+    background-color: transparent;
     border-bottom: 0.1px solid #c6c6c6;
     text-align: center;
   }
@@ -59,16 +59,27 @@
 
 #income-title {
   color: #119535;
+  opacity: 0.8;
 }
 
 #expenses-title {
   color: #f20131;
+  opacity: 0.8;
 }
 
-// #reset-button {
-//   padding-bottom: 1rem;
-// }
+#ui-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
-#reset-button2 {
-  padding: 0.3rem;
+#calc-button {
+  background-color: $off-white;
+  color: green;
+}
+
+#reset-button {
+  background-color: $off-white;
+  color: red;
 }

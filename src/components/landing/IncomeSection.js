@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { IncomeContext } from "../../contexts/IncomeContext";
 
 const IncomeSection = () => {
   const [mortgageNum, setNum1] = useState("0.00");
@@ -11,6 +12,8 @@ const IncomeSection = () => {
   const [netIncomeNum, setNum8] = useState("0.00");
   const [otherIncomeNum, setNum9] = useState("0.00");
   const [bonusesNum, setNum10] = useState("0.00");
+
+  const { changeIncome } = useContext(IncomeContext); //context
 
   const handleChange = e => {
     setNum1(e.target.value);
@@ -42,14 +45,20 @@ const IncomeSection = () => {
 
   const handleChange8 = e => {
     setNum8(e.target.value);
+
+    changeIncome("$" + e.target.value);
   };
 
   const handleChange9 = e => {
     setNum9(e.target.value);
+
+    changeIncome("$" + e.target.value);
   };
 
   const handleChange10 = e => {
-    setNum10(e.target.value);
+    setNum10([e.target.value]);
+
+    changeIncome("$" + e.target.value);
   };
 
   const handleReset = () => {
@@ -63,6 +72,8 @@ const IncomeSection = () => {
     setNum8("0.00");
     setNum9("0.00");
     setNum10("0.00");
+
+    changeIncome("");
   };
 
   const handleMath = () => {
@@ -157,10 +168,6 @@ const IncomeSection = () => {
                 type="number"
               />
             </div>
-            <div id="reset-button">
-              <br />
-              <button id="reset-button2">Reset</button>
-            </div>
           </div>
         </div>
         <div>
@@ -193,9 +200,17 @@ const IncomeSection = () => {
                 type="number"
               />
             </div>
-            <div className="ui-input">
-              <button onClick={handleMath}>Calculate</button>
-              <button onClick={handleReset}>Reset</button>
+            <div id="ui-btns">
+              <div id="calc-button-div">
+                <button id="calc-button" onClick={handleMath}>
+                  Calculate
+                </button>
+              </div>
+              <div id="reset-button-div">
+                <button id="reset-button" onClick={handleReset}>
+                  Reset
+                </button>
+              </div>
             </div>
           </div>
         </div>

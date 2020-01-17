@@ -33,8 +33,8 @@
   }
 
   h3 {
-    color: $off-white;
-    font-weight: 500;
+    color: black;
+    font-weight: 00;
     letter-spacing: 0.1rem;
     padding-bottom: 0.2rem;
     font-size: 1rem;
@@ -46,6 +46,10 @@
   width: 20rem;
   background-color: #119535;
   opacity: 0.9;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #expenses-output {

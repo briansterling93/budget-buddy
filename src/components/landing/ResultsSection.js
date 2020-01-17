@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState, useContext } from "react";
+import { IncomeContext } from "../../contexts/IncomeContext";
 
 const ResultsSection = () => {
+  const { income } = useContext(IncomeContext);
   return (
     <div id="results-section">
       <div id="results-box">
@@ -8,6 +10,7 @@ const ResultsSection = () => {
           <div className="result-output">
             <div id="income-output">
               <h3>Income</h3>
+              <h3>{income}</h3>
             </div>
           </div>
           <div className="result-output">
