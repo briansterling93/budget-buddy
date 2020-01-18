@@ -6,11 +6,15 @@ const ResultContextProvider = props => {
   const [result, setResult] = useState("");
 
   const changeResult = n => {
-    setResult(n);
+    setResult(`Monthly Funds: ${n}`);
+  };
+
+  const removeResult = n => {
+    setResult("");
   };
 
   return (
-    <ResultContext.Provider value={{ result, changeResult }}>
+    <ResultContext.Provider value={{ result, changeResult, removeResult }}>
       {props.children}
     </ResultContext.Provider>
   );

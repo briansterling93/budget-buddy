@@ -78,14 +78,37 @@
 #calc-button {
   background-color: $off-white;
   color: green;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.3rem;
+  outline: none;
+  border: 1px solid #afafaf;
+  border-radius: 1rem;
 }
 
 #reset-button {
   background-color: $off-white;
-  color: red;
+  color: #f20131;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.3rem;
+  outline: none;
+  border: 1px solid #afafaf;
+  border-radius: 1rem;
 }
 
 #ui-btns {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 2rem;
+
+  button:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+
+  button:active {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
 }

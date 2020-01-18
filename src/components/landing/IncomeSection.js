@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { IncomeContext } from "../../contexts/IncomeContext";
 import { ExpenseContext } from "../../contexts/ExpenseContext";
 import { ResultContext } from "../../contexts/ResultContext";
@@ -17,7 +17,7 @@ const IncomeSection = () => {
 
   const { changeIncome, removeIncome } = useContext(IncomeContext); //context
   const { changeExpense, removeExpense } = useContext(ExpenseContext); //context
-  const { changeResult } = useContext(ResultContext); //context
+  const { changeResult, removeResult } = useContext(ResultContext); //context
 
   const handleChange = e => {
     setNum1(e.target.value);
@@ -73,7 +73,7 @@ const IncomeSection = () => {
 
     removeIncome(""); //context
     removeExpense(""); //context
-    changeResult(""); //context
+    removeResult(""); //context
   };
 
   const handleMath = () => {
@@ -94,13 +94,11 @@ const IncomeSection = () => {
       +entertainmentNum +
       +miscNum;
 
-    const sum = formatter.format(+income - +expenses);
+    const sum = +income - +expenses;
 
     changeIncome(formatter.format(income)); //context
     changeExpense(formatter.format(expenses)); //context
     changeResult(formatter.format(sum)); //context
-
-    console.log(+sum);
   };
 
   return (
