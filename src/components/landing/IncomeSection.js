@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { IncomeContext } from "../../contexts/IncomeContext";
+import { ExpenseContext } from "../../contexts/ExpenseContext";
 
 const IncomeSection = () => {
   const [mortgageNum, setNum1] = useState("0.00");
@@ -14,6 +15,7 @@ const IncomeSection = () => {
   const [bonusesNum, setNum10] = useState("0.00");
 
   const { changeIncome } = useContext(IncomeContext); //context
+  const { changeExpense } = useContext(ExpenseContext); //context
 
   const handleChange = e => {
     setNum1(e.target.value);
@@ -45,20 +47,14 @@ const IncomeSection = () => {
 
   const handleChange8 = e => {
     setNum8(e.target.value);
-
-    changeIncome("$" + e.target.value);
   };
 
   const handleChange9 = e => {
     setNum9(e.target.value);
-
-    changeIncome("$" + e.target.value);
   };
 
   const handleChange10 = e => {
     setNum10([e.target.value]);
-
-    changeIncome("$" + e.target.value);
   };
 
   const handleReset = () => {
@@ -73,7 +69,8 @@ const IncomeSection = () => {
     setNum9("0.00");
     setNum10("0.00");
 
-    changeIncome("");
+    changeIncome(""); //context
+    changeExpense(""); //context
   };
 
   const handleMath = () => {
@@ -93,6 +90,9 @@ const IncomeSection = () => {
       +loanNum +
       +entertainmentNum +
       +miscNum;
+
+    changeIncome(formatter.format(income)); //context
+    changeExpense(formatter.format(expenses)); //context
 
     const sum = formatter.format(+income - +expenses);
 

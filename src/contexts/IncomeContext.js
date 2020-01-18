@@ -3,7 +3,7 @@ import React, { useState, createContext } from "react";
 export const IncomeContext = createContext();
 
 const IncomeContextProvider = props => {
-  const [income, setIncome] = useState([""]);
+  const [income, setIncome] = useState("");
 
   const changeIncome = n => {
     setIncome(n);
