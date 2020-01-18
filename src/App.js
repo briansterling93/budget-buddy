@@ -3,6 +3,7 @@ import ResultsSection from "./components/landing/ResultsSection";
 import IncomeSection from "./components/landing/IncomeSection";
 import IncomeContextProvider from "./contexts/IncomeContext";
 import ExpenseContextProvider from "./contexts/ExpenseContext";
+import ResultContextProvider from "./contexts/ResultContext";
 
 import "./components/sass/main.scss";
 
@@ -11,8 +12,10 @@ const App = () => {
     <div id="main-app">
       <IncomeContextProvider>
         <ExpenseContextProvider>
-          <ResultsSection />
-          <IncomeSection />
+          <ResultContextProvider>
+            <ResultsSection />
+            <IncomeSection />
+          </ResultContextProvider>
         </ExpenseContextProvider>
       </IncomeContextProvider>
     </div>

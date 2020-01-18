@@ -6,11 +6,15 @@ const IncomeContextProvider = props => {
   const [income, setIncome] = useState("");
 
   const changeIncome = n => {
-    setIncome(n);
+    setIncome(`+ ${n}`);
+  };
+
+  const removeIncome = n => {
+    setIncome("");
   };
 
   return (
-    <IncomeContext.Provider value={{ income, changeIncome }}>
+    <IncomeContext.Provider value={{ income, changeIncome, removeIncome }}>
       {props.children}
     </IncomeContext.Provider>
   );

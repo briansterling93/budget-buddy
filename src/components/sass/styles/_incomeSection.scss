@@ -44,12 +44,20 @@
   height: 19rem;
   width: 18rem;
   background-color: transparent;
+
+  input {
+    color: #045400;
+  }
 }
 
 #expenses-input {
   height: 19rem;
   width: 18rem;
   background-color: transparent;
+
+  input {
+    color: #960c05;
+  }
 }
 
 .ui-input {
@@ -67,13 +75,6 @@
   opacity: 0.8;
 }
 
-#ui-btns {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
 #calc-button {
   background-color: $off-white;
   color: green;
@@ -82,4 +83,9 @@
 #reset-button {
   background-color: $off-white;
   color: red;
+}
+
+#ui-btns {
+  display: flex;
+  justify-content: space-evenly;
 }
