@@ -11,3 +11,158 @@ $off-white: #ececec;
 body {
   background-color: $off-white;
 }
+
+//Media Queries Below
+
+// @media screen and (max-width: 1024px) //tablet {
+//
+//   #ui-btns {
+//     padding-left: 10% !important;
+//   }
+
+//   #income-input {
+//     padding-left: 40% !important;
+//     width: 28rem !important;
+//   }
+
+//   #expense-section {
+//     padding-left: 2rem !important;
+//   }
+
+//   #income-title {
+//     padding-left: 11rem !important;
+//     font-size: 2rem;
+//   }
+
+//   #expenses-title {
+//     font-size: 2rem !important;
+//   }
+
+//   #results-box {
+//     width: 65rem !important;
+
+//     h3 {
+//       font-size: 1.5rem !important;
+//     }
+//   }
+
+//   #income-output {
+//     width: 25rem !important;
+//   }
+
+//   #expenses-output {
+//     width: 25rem !important;
+//   }
+
+//   #balance-output {
+//     width: 25rem !important;
+//     font-size: 1.3rem !important;
+//   }
+
+//   #income-section {
+//     padding-right: 9rem !important;
+//   }
+
+//   .income-input-p {
+//     padding-left: 1.6rem !important;
+//   }
+
+//   .ui-input {
+//     padding: 0.7rem !important;
+
+//     input {
+//       font-size: 1.4rem !important;
+//     }
+
+//     p {
+//       font-size: 1.6rem !important;
+//     }
+//   }
+
+//   #calc-button {
+//     font-size: 1.4rem !important;
+//     font-weight: 600;
+//   }
+
+//   #reset-button {
+//     font-size: 1.4rem !important;
+//     font-weight: 600;
+//   }
+// }
+
+@media screen and (max-width: 414px) {
+  #ui-btns {
+    padding-left: 10% !important;
+  }
+
+  #income-input {
+    padding-left: 40% !important;
+  }
+
+  #income-title {
+    padding-left: 8.5rem !important;
+    font-size: 1.5rem;
+  }
+
+  #expenses-title {
+    font-size: 1.5rem !important;
+  }
+
+  #results-box {
+    width: 34rem !important;
+  }
+
+  #income-section {
+    padding-left: 3.5rem !important;
+  }
+
+  .income-input-p {
+    padding-left: 1.6rem;
+  }
+
+  .ui-input {
+    p {
+      font-size: 1.2rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #ui-btns {
+    padding-left: 10% !important;
+  }
+
+  body {
+    font-size: 1.2rem !important;
+  }
+
+  #income-section {
+    padding-left: 5rem !important;
+
+    input {
+      font-size: 1rem !important;
+    }
+  }
+
+  .income-input-p {
+    padding-left: 2rem;
+  }
+
+  #income-title {
+    padding-left: 9rem !important;
+  }
+
+  #results-box {
+    width: 31rem !important;
+  }
+
+  #results-section {
+    h3 {
+      font-size: 1.1rem !important;
+    }
+
+    h2 {
+      font-size: 1.5rem !important;
+    }
+  }
+}

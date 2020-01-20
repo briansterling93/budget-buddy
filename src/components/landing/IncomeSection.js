@@ -104,7 +104,7 @@ const IncomeSection = () => {
   return (
     <div id="income-section">
       <div id="income-section2">
-        <div>
+        <div id="expense-section">
           <h3 id="expenses-title">Expenses</h3>
           <div id="expenses-input">
             <div className="ui-input">
@@ -176,7 +176,7 @@ const IncomeSection = () => {
           <h3 id="income-title">Income</h3>
           <div id="income-input">
             <div className="ui-input">
-              <p>Net Monthly Income</p>
+              <p className="income-input-p">Net Monthly Income</p>
               <input
                 onChange={handleChange8}
                 value={netIncomeNum}
@@ -185,7 +185,7 @@ const IncomeSection = () => {
               />
             </div>
             <div className="ui-input">
-              <p>Other Monthly Income</p>
+              <p className="income-input-p">Other Monthly Income</p>
               <input
                 onChange={handleChange9}
                 value={otherIncomeNum}
@@ -194,7 +194,7 @@ const IncomeSection = () => {
               />
             </div>
             <div className="ui-input">
-              <p>Monthly Bonuses</p>
+              <p className="income-input-p">Monthly Bonuses</p>
               <input
                 onChange={handleChange10}
                 value={bonusesNum}
