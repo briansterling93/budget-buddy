@@ -1,0 +1,151 @@
+@media screen and (min-width: 1024px) {
+  #ui-btns {
+    padding-left: 10% !important;
+  }
+
+  #income-input {
+    padding-left: 40% !important;
+    width: 28rem !important;
+  }
+
+  #expense-section {
+    padding-left: 2rem !important;
+  }
+
+  #income-title {
+    padding-left: 11rem !important;
+    font-size: 2rem;
+  }
+
+  #expenses-title {
+    font-size: 2rem !important;
+  }
+
+  #results-box {
+    width: 65rem !important;
+
+    h3 {
+      font-size: 1.5rem !important;
+    }
+  }
+
+  #income-output {
+    width: 25rem !important;
+  }
+
+  #expenses-output {
+    width: 25rem !important;
+  }
+
+  #balance-output {
+    width: 25rem !important;
+    font-size: 1.3rem !important;
+  }
+
+  #income-section {
+    padding-right: 18rem !important;
+  }
+
+  .income-input-p {
+    padding-left: 1.6rem !important;
+  }
+
+  .ui-input {
+    padding: 0.7rem !important;
+
+    input {
+      padding-top: 0.4rem !important;
+      font-size: 1.4rem !important;
+    }
+
+    p {
+      font-size: 1.6rem !important;
+    }
+  }
+
+  #calc-button {
+    font-size: 1.4rem !important;
+    font-weight: 600;
+  }
+
+  #reset-button {
+    font-size: 1.4rem !important;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #ui-btns {
+    padding-left: 10% !important;
+  }
+
+  #income-input {
+    padding-left: 40% !important;
+    width: 30rem !important;
+  }
+
+  #expense-section {
+    padding-left: 2rem !important;
+  }
+
+  #income-title {
+    padding-left: 13.5rem !important;
+    font-size: 3rem;
+  }
+
+  #expenses-title {
+    font-size: 3rem !important;
+  }
+
+  #results-box {
+    width: 65rem !important;
+
+    h3 {
+      font-size: 1.5rem !important;
+    }
+  }
+
+  #income-output {
+    width: 25rem !important;
+  }
+
+  #expenses-output {
+    width: 25rem !important;
+  }
+
+  #balance-output {
+    width: 25rem !important;
+    font-size: 1.3rem !important;
+  }
+
+  #income-section {
+    padding-left: 5rem !important;
+  }
+
+  .income-input-p {
+    padding-left: 1.6rem !important;
+  }
+
+  .ui-input {
+    padding: 0.7rem !important;
+
+    input {
+      padding-top: 0.4rem !important;
+      font-size: 1.6rem !important;
+    }
+
+    p {
+      font-size: 1.9rem !important;
+    }
+  }
+
+  #calc-button {
+    font-size: 1.7rem !important;
+    font-weight: 600;
+  }
+
+  #reset-button {
+    font-size: 1.7rem !important;
+    font-weight: 600;
+  }
+}
